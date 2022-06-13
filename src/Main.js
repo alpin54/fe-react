@@ -1,15 +1,18 @@
 import HeroBanner from './HeroBanner';
+import Services from './Services';
 import SectionDescription from './SectionDescription';
-import Features from './Features';
-import Testimonials from './Testimonials';
+import Testimony from './Testimony';
+import Blog from './Blog';
+
 
 function Main() {
   return (
     <div className="main-site js-main-site">
       <HeroBanner />
+      <Services />
       <SectionDescription />
-      <Features />
-      <Testimonials />
+      <Testimony />
+      <Blog />
     </div>
   );
 }
