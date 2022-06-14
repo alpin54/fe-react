@@ -1,9 +1,9 @@
-import serviceImage1 from './assets/img/dummy/features-1.svg';
-import serviceImage2 from './assets/img/dummy/features-2.svg';
-import serviceImage3 from './assets/img/dummy/features-3.svg';
-import serviceImage4 from './assets/img/dummy/features-4.svg';
-import serviceImage5 from './assets/img/dummy/features-5.svg';
-import serviceImage6 from './assets/img/dummy/features-6.svg';
+import serviceImage1 from '../img/dummy/features-1.svg';
+import serviceImage2 from '../img/dummy/features-2.svg';
+import serviceImage3 from '../img/dummy/features-3.svg';
+import serviceImage4 from '../img/dummy/features-4.svg';
+import serviceImage5 from '../img/dummy/features-5.svg';
+import serviceImage6 from '../img/dummy/features-6.svg';
 import ServicesItem from './ServicesItem';
 import Button from './Button';
 

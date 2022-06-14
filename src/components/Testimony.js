@@ -1,4 +1,4 @@
-import testimonyImage1 from './assets/img/dummy/testimony-1.jpg';
+import testimonyImage1 from '../img/dummy/testimony-1.jpg';
 import TestimonyItem from './TestimonyItem';
 
 function Testimony() {

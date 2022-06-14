@@ -1,4 +1,4 @@
-import logo from './assets/img/logo/trafalgar-footer.svg';
+import logo from '../img/logo/trafalgar-footer.svg';
 
 const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import bannerImage from './assets/img/dummy/home-banner-1.png';
+import bannerImage from '../img/dummy/home-banner-1.png';
 import HeroBannerItem from './HeroBannerItem';
 
 function HeroBanner() {

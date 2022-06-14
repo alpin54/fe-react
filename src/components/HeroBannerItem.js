@@ -12,7 +12,7 @@ function HeroBannerItem({ to, image, title, desc }) {
             <h2 className="hero-banner__title">{title}</h2>
             <p className="hero-banner__desc">{desc}</p>
             <div className="hero-banner__btn">
-              <Button element='link' to={to}>
+              <Button type='link' to={to}>
                 Consult today
               </Button>
             </div>
