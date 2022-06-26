@@ -1,6 +1,6 @@
 import Button from './Button';
 
-function HeroBannerItem({ to, image, title, desc }) {
+const HeroBannerItem = ({ to, image, title, desc }) => {
   return (
     <div className="hero-banner__item">
       <div className="container">
