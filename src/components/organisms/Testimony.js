@@ -1,4 +1,6 @@
-import TestimonyItem from 'components/molecules/TestimonyItem';
+import { Fragment } from 'react';
+// components
+import { TestimonyItem } from 'components';
 
 const Testimony = ( { data } ) => {
 
@@ -7,13 +9,15 @@ const Testimony = ( { data } ) => {
       <div className="container">
         <div className="testimony__box">
           <div className="testimony__head">
-            <h3 className="text-title text-title--white">What our customer are saying</h3>
+            <h3 className="text-title text-title--white">{data.title}</h3>
           </div>
           <div className="testimony__body">
             { 
-              data.map( (v, i) => {
+              data.list.map( (val, idx) => {
                 return (
-                  <TestimonyItem key={`testimony-${i}`} image={v.image} name={v.name} position={v.position} desc={v.desc} />
+                  <Fragment key={idx}>
+                    <TestimonyItem data={val}/>
+                  </Fragment>
                 )
               }) 
             }

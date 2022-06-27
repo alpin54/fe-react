@@ -1,6 +1,7 @@
 import cn from 'classnames';
 // button
-import Button from 'components/atoms/Button';
+import { Button } from 'components';
+
 
 const SectionDescription = ({ data, reverse = false, arrowIcon = false }) => {
   

@@ -1,29 +1,31 @@
-// import { Fragment } from 'react';
-import ServicesItem from 'components/molecules/ServicesItem';
-import Button from 'components/atoms/Button';
+import { Fragment } from 'react';
+// components
+import { ServicesItem, Button } from 'components';
 
-const Services = ({data}) => {
+const Services = ({ data }) => {
 
   return (
     <div className="service">
       <div className="container">
         <div className="service__head">
-          <h3 className="text-title">Our services</h3>
-          <p className="text-desc">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+          <h3 className="text-title">{data.title}</h3>
+          <p className="text-desc">{data.desc}</p>
         </div>
         <div className="service__body">
           <div className="service__list">
             { 
-              data.map( (v, i) => {
+              data.list.map( (val, idx) => {
                 return (
-                  <ServicesItem key={`services-${i}`} image={v.image} title={v.title} desc={v.desc} />
+                  <Fragment key={idx}>
+                    <ServicesItem data={val} />
+                  </Fragment>
                 )
               }) 
             }
           </div>
         </div>
         <div className="service__footer">
-          <Button element='link' to='learn-more.html' variant='secondary'>
+          <Button type='link' to='/service' variant='secondary'>
             Learn More
           </Button>
         </div>

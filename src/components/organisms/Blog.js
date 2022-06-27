@@ -1,5 +1,6 @@
-import BlogItem from 'components/molecules/BlogItem';
-import Button from 'components/atoms/Button';
+import { Fragment } from 'react';
+// components
+import { BlogItem, Button } from 'components';
 
 const Blog = ({data}) => {
 
@@ -7,22 +8,24 @@ const Blog = ({data}) => {
     <div className="blog">
       <div className="container">
         <div className="blog__title">
-          <h3 className="text-title">Check out our latest article</h3>
+          <h3 className="text-title">{data.title}</h3>
         </div>
         <div className="blog__content">
           <div className="blog__list js-blog-list">
           { 
-            data.map( (v, i) => {
+            data.list.map( (val, idx) => {
               return (
-                <BlogItem key={`blog-${i}`} to={v.to} image={v.image} title={v.title} desc={v.desc} />
+                <Fragment key={idx}>
+                  <BlogItem data={val}/>
+                </Fragment>
               )
             }) 
           }
           </div>
         </div>
         <div className="blog__btn">
-          <Button element='link' to='blog-detail.html' variant='secondary'>
-            Read More
+          <Button type='link' to={data.btn.to} variant='secondary'>
+            {data.btn.text}
           </Button>
         </div>
       </div>

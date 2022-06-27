@@ -1,8 +1,8 @@
 // dummy
-import { servicesData, blogData, testimonyData, sectionData } from 'assets/dummy';
+import { bannerData, servicesData, blogData, testimonyData, sectionData } from 'assets/dummy';
 
 // components
-import { Header, Footer, HeroBanner, SectionDescription, Services, Blog, Testimony } from 'components';
+import { Header, HeroBanner, Footer, SectionDescription, Services, Blog, Testimony } from 'components';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <div className='main-site'>
-        <HeroBanner />
+        <HeroBanner data={ bannerData } />
         <Services data={ servicesData } />
         <SectionDescription data={sectionData.data1} />
         <SectionDescription data={sectionData.data2} reverse={true} arrowIcon={true} />
