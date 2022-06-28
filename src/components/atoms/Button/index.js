@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import { SystemIcon } from 'components';
 
 const Button = (props) => {
 
@@ -15,7 +16,7 @@ const Button = (props) => {
           <a className={classNames} href={to}>
             {children}
             {arrowIcon && (
-              <i className='icon-arrow-down'></i>
+              <SystemIcon name='arrow-down'/>
             )}
           </a>
         )

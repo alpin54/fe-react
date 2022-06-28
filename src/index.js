@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 // app
 import App from 'container/app';
@@ -7,28 +7,12 @@ import App from 'container/app';
 // styles
 import 'assets/styles/app.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
-// Basic Render React
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-
-// app
-// import App from './container/app';
-// import reportWebVitals from './reportWebVitals';
-
-// styles
-// import './assets/styles/app.scss';
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

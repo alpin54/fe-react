@@ -1,3 +1,5 @@
+import { SystemIcon } from 'components';
+
 const BlogItem = ({ data }) => {
   return (
     <div className="blog__item">
@@ -11,7 +13,7 @@ const BlogItem = ({ data }) => {
           <p className="blog__txt__desc">{data.desc}</p>
           <button className='btn-forward' type='button'>
             Read More
-            <i className="icon-arrow-right"></i>
+            <SystemIcon name='arrow-right'/>
           </button>
         </div>
       </div>

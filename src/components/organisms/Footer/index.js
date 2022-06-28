@@ -1,4 +1,4 @@
-import logo from 'assets/img/logo/trafalgar-footer.svg';
+import { Logo } from 'components';
 
 const Footer = () => {
   return (
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         <div className="footer__about">
           <a className="footer__logo" href="index.html">
-            <img className="footer__logo__img" src={logo} alt="trafalgar" />
+            <Logo className='footer__logo__img' name='trafalgar-text' />
           </a>
           <p className="footer__description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
           <p className="footer__copyright">©Trafalgar PTY LTD 2020. All rights reserved</p>
