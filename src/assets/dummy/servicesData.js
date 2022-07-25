@@ -16,34 +16,34 @@ const servicesData = {
   list: [
     {
       image: serviceImage1,
-      title: "Search doctor",
-      desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals"
+      title: 'Search doctor',
+      desc: 'Choose your doctor from thousands of specialist, general, and trusted hospitals'
     },
     {
       image: serviceImage2,
-      title: "Online pharmacy",
-      desc: "Buy your medicines with our mobile application with a simple delivery system"
+      title: 'Online pharmacy',
+      desc: 'Buy your medicines with our mobile application with a simple delivery system'
     },
     {
       image: serviceImage3,
-      title: "Consultation",
-      desc: "Free consultation with our trusted doctors and get the best recomendations"
+      title: 'Consultation',
+      desc: 'Free consultation with our trusted doctors and get the best recomendations'
     },
     {
       image: serviceImage4,
-      title: "Details info",
-      desc: "Free consultation with our trusted doctors and get the best recomendations"
+      title: 'Details info',
+      desc: 'Free consultation with our trusted doctors and get the best recomendations'
     },
     {
       image: serviceImage5,
-      title: "Emergency care",
-      desc: "You can get 24/7 urgent care for yourself or your children and your lovely family"
+      title: 'Emergency care',
+      desc: 'You can get 24/7 urgent care for yourself or your children and your lovely family'
     },
     {
       image: serviceImage6,
-      title: "Tracking",
-      desc: "Track and save your medical history and health data"
-    },
+      title: 'Tracking',
+      desc: 'Track and save your medical history and health data'
+    }
   ]
 };
 

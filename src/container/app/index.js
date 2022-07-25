@@ -1,24 +1,16 @@
-// dummy
-import { bannerData, servicesData, blogData, testimonyData, sectionData } from 'assets/dummy';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// components
-import { Header, HeroBanner, Footer, SectionDescription, Services, Blog, Testimony } from 'components';
+import AppRoutes from 'config/routes';
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <div className='main-site'>
-        <HeroBanner data={ bannerData } />
-        <Services data={ servicesData } />
-        <SectionDescription data={sectionData.data1} />
-        <SectionDescription data={sectionData.data2} reverse={true} arrowIcon={true} />
-        <Testimony data={ testimonyData } />
-        <Blog data={ blogData } />
-      </div>
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        {AppRoutes.map((val, idx) => (
+          <Route key={`route${idx}`} {...val} />
+        ))}
+      </Routes>
+    </Router>
   );
 }
 

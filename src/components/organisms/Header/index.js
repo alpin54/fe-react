@@ -1,35 +1,83 @@
-import { Logo, BurgerMenu } from 'components';
+import { Logo } from 'components';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+  // react hooks
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    handleToggleClassShow();
+    // eslint-disable-next-line
+  }, [showMenu]);
+
+  const bodyAddClass = (newClass) => {
+    newClass.forEach((v) => {
+      document.body.classList.add(v);
+    });
+  };
+
+  const bodyRemoveClass = (newClass) => {
+    newClass.forEach((v) => {
+      document.body.classList.remove(v);
+    });
+  };
+
+  const handleToggleClassShow = () => {
+    if (showMenu) {
+      bodyAddClass(['rm-scroll', 'show-menu']);
+    } else {
+      bodyRemoveClass(['rm-scroll', 'show-menu']);
+    }
+  };
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <div className="header">
-      <div className="container">
-        <div className="header__nav">
-          <a className="header__logo" href="index.html">
-            <Logo className='header__logo__img'/>
-          </a>
-          <ul className="header__nav__menu">
-            <li className="header__nav__item">
-              <a className="header__nav__link header__nav__link--active" href="index.html">Home</a>
+    <div className='header'>
+      <div className='container'>
+        <div className='header__nav'>
+          <Link className='header__logo' to='/'>
+            <Logo className='header__logo__img' />
+          </Link>
+          <ul className='header__nav__menu'>
+            <li className='header__nav__item'>
+              <Link className='header__nav__link header__nav__link--active' to='/'>
+                Home
+              </Link>
             </li>
-            <li className="header__nav__item">
-              <a className="header__nav__link" href="find-doctor.html">Find a doctor</a>
+            <li className='header__nav__item'>
+              <Link className='header__nav__link' to='/find-doctor'>
+                Find a doctor
+              </Link>
             </li>
-            <li className="header__nav__item">
-              <a className="header__nav__link" href="apps.html">Apps</a>
+            <li className='header__nav__item'>
+              <Link className='header__nav__link' to='/apps'>
+                Apps
+              </Link>
             </li>
-            <li className="header__nav__item">
-              <a className="header__nav__link" href="testimonials.html">Testimonials</a>
+            <li className='header__nav__item'>
+              <Link className='header__nav__link' to='/testimonials'>
+                Testimonials
+              </Link>
             </li>
-            <li className="header__nav__item">
-              <a className="header__nav__link" href="about-us.html">About us</a>
+            <li className='header__nav__item'>
+              <Link className='header__nav__link' to='/about'>
+                About us
+              </Link>
             </li>
           </ul>
-          <BurgerMenu/>
+          <button className='burger-menu js-mobile-menu' type='button' onClick={toggleMenu}>
+            <span className='burger-menu__bar'></span>
+            <span className='burger-menu__bar'></span>
+            <span className='burger-menu__bar'></span>
+          </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Header;

@@ -1,0 +1,30 @@
+---
+jika defendesi kosong maka akan di jalankan sekali jika tanpa defendesi 1 state akan terus berubah jika pakai defendesi maka hanya nilai dari defendesi yg akan berubah
+
+---
+https://stackoverflow.com/questions/66313344/react-router-whats-the-difference-between-router-and-switch#:~:text=You%20can%20use%20the%20exact,common%20route%20prefix%2C%20use%20Router
+
+--- 
+https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
+
+---
+Pakai switch ketika react router versi di bawah 6
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Home, About, Testimonials } from "container/pages";
+
+function App() {
+
+  return (
+    <Router>
+      <Switch>
+        <Route path='/' components={<Home />} />
+        <Route path='/about' components={<About />} />
+        <Route path='/testimonials' components={<Testimonials />} />
+      </Switch>
+    </Router>    
+  );
+}
+
+export default App;

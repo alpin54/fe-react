@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/';
 
-
 // app
 import App from 'container/app';
 

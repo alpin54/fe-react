@@ -6,9 +6,9 @@ const testimonyData = {
   list: [
     {
       image: testimonyImage1,
-      name: "Edward Newgate",
-      position: "Founder Circle",
-      desc: "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
+      name: 'Edward Newgate',
+      position: 'Founder Circle',
+      desc: 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely'
     }
   ]
 };
