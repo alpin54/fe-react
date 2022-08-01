@@ -2,7 +2,13 @@
 import { bannerData, servicesData, sectionData } from 'assets/dummy';
 
 // components
-import { Header, HeroBanner, Footer, SectionDescription, Services } from 'components';
+import {
+  Header,
+  HeroBanner,
+  Footer,
+  SectionDescription,
+  Services
+} from 'components';
 
 function Home() {
   return (

@@ -44,7 +44,9 @@ const Header = () => {
           </Link>
           <ul className='header__nav__menu'>
             <li className='header__nav__item'>
-              <Link className='header__nav__link header__nav__link--active' to='/'>
+              <Link
+                className='header__nav__link header__nav__link--active'
+                to='/'>
                 Home
               </Link>
             </li>
@@ -69,7 +71,10 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button className='burger-menu js-mobile-menu' type='button' onClick={toggleMenu}>
+          <button
+            className='burger-menu js-mobile-menu'
+            type='button'
+            onClick={toggleMenu}>
             <span className='burger-menu__bar'></span>
             <span className='burger-menu__bar'></span>
             <span className='burger-menu__bar'></span>

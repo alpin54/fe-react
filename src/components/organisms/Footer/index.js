@@ -85,8 +85,13 @@ const Footer = () => {
           <a className='footer__logo' href='index.html'>
             <Logo className='footer__logo__img' name='trafalgar-text' />
           </a>
-          <p className='footer__description'>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-          <p className='footer__copyright'>©Trafalgar PTY LTD 2020. All rights reserved</p>
+          <p className='footer__description'>
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone
+          </p>
+          <p className='footer__copyright'>
+            ©Trafalgar PTY LTD 2020. All rights reserved
+          </p>
         </div>
       </div>
     </div>

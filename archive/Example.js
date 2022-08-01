@@ -37,7 +37,11 @@ class Example extends Component {
     return (
       <div className='example'>
         <div className='container'>
-          <input type='text' placeholder='Input here' onInput={(e) => handleChangeFullName(e)} />
+          <input
+            type='text'
+            placeholder='Input here'
+            onInput={(e) => handleChangeFullName(e)}
+          />
           <h1>Hello, {fullName}</h1>
           <button type='button' onClick={handleShowPopup}>
             Show Popup

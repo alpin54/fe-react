@@ -6,7 +6,11 @@ const HeroBannerItem = ({ data }) => {
       <div className='container'>
         <div className='hero-banner__wrapper'>
           <div className='hero-banner__img'>
-            <img className='hero-banner__img__el' src={data.image} alt='Virtual healthcare for you' />
+            <img
+              className='hero-banner__img__el'
+              src={data.image}
+              alt='Virtual healthcare for you'
+            />
           </div>
           <div className='hero-banner__txt'>
             <h2 className='hero-banner__title'>{data.title}</h2>

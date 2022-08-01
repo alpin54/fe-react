@@ -2,7 +2,14 @@ import cn from 'classnames';
 import { SystemIcon } from 'components';
 
 const Button = (props) => {
-  const { to, children, type = 'button', variant = 'primary', block = false, arrowIcon = false } = props;
+  const {
+    to,
+    children,
+    type = 'button',
+    variant = 'primary',
+    block = false,
+    arrowIcon = false
+  } = props;
 
   const classNames = cn('btn', `btn--${variant}`, {
     'btn--block': block

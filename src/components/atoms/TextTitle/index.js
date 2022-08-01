@@ -3,7 +3,7 @@ import cn from 'classnames';
 const TextTitle = ({ className = 'text-title', modifier, title, desc }) => {
   const classModifier = modifier ? `text-title--${modifier}` : '';
   const classNames = cn(className, classModifier);
-  const classDesc = `text-desc ${modifier ? `text-title--${modifier}` : ''}`;
+  const classDesc = `text-desc ${modifier ? `text-desc--${modifier}` : ''}`;
 
   return (
     <>

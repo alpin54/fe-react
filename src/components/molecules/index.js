@@ -6,4 +6,12 @@ import TestimonyItem from './TestimonyItem';
 import Blog from './Blog';
 import BlogItem from './BlogItem';
 
-export { HeroBannerItem, SectionDescription, Services, ServicesItem, TestimonyItem, Blog, BlogItem };
+export {
+  HeroBannerItem,
+  SectionDescription,
+  Services,
+  ServicesItem,
+  TestimonyItem,
+  Blog,
+  BlogItem
+};
